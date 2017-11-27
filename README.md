@@ -1,11 +1,11 @@
-# fxdayu_sinta
+# fxdayu_tdx
 
-用于抓取sina tick数据并合成K线数据写入MongoDB。
-
+用于抓取tdx数据并合成K线数据写入MongoDB。
+[!!! 尚未开发完毕，以下为原项目文档说明。]
 
 ## 用pip安装
 
-> pip install git+https://github.com/cheatm/fxdayu_sinta.git
+> pip install git+https://github.com/cheatm/fxdayu_tdx.git
 
 ## 初始化
 
