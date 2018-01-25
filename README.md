@@ -6,6 +6,7 @@ rqalpha工具包，用于抓取tdx等数据并合成K线数据写入MongoDB。
 
 ## 用pip安装
 
+> rm -rf `python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())"`/fxdayu_dataz*
 > pip install git+https://github.com/crystalphi/fxdayu_dataz.git
 
 ## 初始化
