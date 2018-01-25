@@ -25,7 +25,7 @@ def coder(code):
 def write_adjust(code, s):
     adj = s.groupby(s).agg(mapper)
     adj['adjust'] = adj.index
-    print code
+    print(code)
     write(db[coder(code)], adj)
 
 
@@ -36,5 +36,5 @@ for code, item in adjust.iteritems():
     try:
         write_adjust(code, item)
     except Exception as e:
-        print code, e
+        print(code, e)
 

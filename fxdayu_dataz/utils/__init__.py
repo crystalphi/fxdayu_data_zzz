@@ -1,8 +1,8 @@
 
 
 def handle_exception(e, function, *args, **kwargs):
-    print "{} {} {}".format(function, args, kwargs)
-    print e
+    print("{} {} {}".format(function, args, kwargs))
+    print(e)
 
 
 def retry(count=3, exception=Exception, handle=handle_exception, default=lambda *args, **kwargs: None, wait=1):
