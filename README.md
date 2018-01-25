@@ -11,10 +11,10 @@ rqalpha工具包，用于抓取tdx等数据并合成K线数据写入MongoDB。
 ## 初始化
 
 ### 创建配置文件
-PATH为要存储文件的目录
 > dataz init config PATH
+PATH为要存储文件的目录，如：~/.fxdayu/dataz_bundle
 可以通过添加环境变量FXDAYU来指定配置文件的目录
-例如添加环境变量FXDAYU=~/fxdayu，配置文件会生成在~/fxdayu/dataz/目录中
+例如添加环境变量FXDAYU=~/.fxdayu，配置文件会生成在~/.fxdayu/dataz/目录中
 
 ### 创建文件索引
 可以用参数 -s yyyy-mm-dd, -e yyyy-mm-dd 指定索引长度

@@ -1,7 +1,7 @@
 #! /bin/bash
 
 source /etc/profile
-export fxdayu=/fxdayu
+export fxdayu=~/.fxdayu
 
 dataz master update
 dataz request tick
