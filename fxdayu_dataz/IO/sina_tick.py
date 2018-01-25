@@ -102,8 +102,15 @@ def make_url(*args):
 
 # 获取历史tick数据(str)
 def history_text(code, date_, **kwargs):
+    import chardet  # 需要导入这个模块，检测编码格式
+
     url = make_url(TICK_HISTORY, join_params(symbol=code, date=date_.strftime("%Y-%m-%d")))
-    return requests.get(url, headers=HIS_HEADERS, timeout=10, **kwargs).content
+    resp = requests.get(url, headers=HIS_HEADERS, timeout=10, **kwargs).content
+
+    encode_type = chardet.detect(resp)
+    resp = resp.decode(encode_type['encoding'])  # 进行相应解码，赋给原标识符（变量）
+
+    return resp
 
 
 def check_response(content):
