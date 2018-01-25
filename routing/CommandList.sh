@@ -3,13 +3,13 @@
 source /etc/profile
 export fxdayu=/fxdayu
 
-sinta master update
-sinta request tick 
-sinta master file
-sinta write master
-sinta master db
-sinta freq update
-sinta freq check
-sinta write freq
-sinta freq check
-sinta idx
+dataz master update
+dataz request tick
+dataz master file
+dataz write master
+dataz master db
+dataz freq update
+dataz freq check
+dataz write freq
+dataz freq check
+dataz idx

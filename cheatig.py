@@ -13,8 +13,8 @@ def handle(frame):
     return pd.DataFrame({'adjust': frame['ex_cum_factor']})
 
 table = MapTable("E:\\rqalpha\\bundle\\ex_cum_factor.bcolz", 'start_date', blp2index=num2date)
-print len(table.line_map.keys())
-# print handle(table.read('000001.XSHE'))
+print(len(table.line_map.keys()))
+# print(handle(table.read('000001.XSHE')))
 
 # from rqalpha.data.base_data_source import BaseDataSource
 # from rqalpha.data.data_proxy import DataProxy
@@ -25,7 +25,7 @@ print len(table.line_map.keys())
 # dp = DataProxy(ds)
 # dt = datetime.now()
 #
-# print ds.history_bars(
+# print(ds.history_bars(
 #     dp.instruments("000001.XSHE"), 50, "1d", ["datetime", "close", "volume"], dt=dt,
 #     adjust_orig=dt, adjust_type='post'
-# )
+# ))
